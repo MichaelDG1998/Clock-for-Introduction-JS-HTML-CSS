@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US" style="background-color: black">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css"href="Div-style.css">
+
+
+    <body onload="updateClock(); setInterval('updateClock()', 1000 ); clockDraw()">
+
+        
+    <!-- Script for the Clock -->   
+       
+    <script src="Clock.JS"></script>
+
+    <!-- Setting Up Clock In Browser -->
+  
+    <div id="content" >
+
+        <div class = "Numbers" style="width: 400px; text-align: center; margin: 20px auto; position: absolute; visibility: visible; left: -150px;right: auto; top: 300px; z-index: 200;text-decoration: underline;text-shadow: 1px 1px darkgrey; background-color: gray;color: white;border: 2px solid #000; font-size: 25px">
+            <span id="clock">&nbsp;</span>
+        </div>
+        <div class = "Clock Face"id="outPopUp">
+        <canvas id="canvas" width="400" height="400">&nbsp;</canvas>
+        </div>
+
+    </div>
+
+
+    </body>
+</head>
+
+
+</html>
